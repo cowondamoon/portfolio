@@ -12,7 +12,7 @@ hr {
   max-width: 50px;
 }
 hr.light {
-  border-color: white;
+  border-color: #CBE86B;
 }
 a {
   -webkit-transition: all 0.35s;
@@ -38,7 +38,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #CBE86B;
+  background-color: #1C140D;
 }
 .bg-dark {
   background-color: #1C140D;
@@ -211,15 +211,19 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+#services .section-heading,
+#contact .section-heading {
+  color: #1C140D;
+}
 .section-heading {
   margin-top: 0;
-  color: #1C140D;
+  color: #FFFFFF;
 }
 #services hr {
-  border-color: #1C140D;
+  border-color: #CBE86B;
 }
 #about p {
-  color: #1C140D;
+  color: #FFFFFF;
 }
 .service-box {
   max-width: 400px;
@@ -247,7 +251,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(203, 232, 107, 0.9);
+  background: rgba(203, 232, 107, 0.7);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -273,9 +277,11 @@ header .header-content .header-content-inner p {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
+  color: #1C140D;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
+  color: #1C140D;
 }
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;

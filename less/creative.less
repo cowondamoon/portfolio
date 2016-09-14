@@ -19,7 +19,7 @@ hr {
 }
 
 hr.light {
-    border-color: white;
+    border-color: @theme-color2;
 }
 
 a {
@@ -47,7 +47,7 @@ p {
 }
 
 .bg-primary {
-    background-color: @theme-color2;
+    background-color: @theme-color4;
 }
 
 .bg-dark {
@@ -228,16 +228,21 @@ header {
 }
 
 // Sections
+#services .section-heading, #contact .section-heading{
+
+color:@theme-color4;
+
+}
 
 .section-heading {
     margin-top: 0;
-	color: @theme-color4;
+	color: @theme-color1;
 }
 #services hr{
-    border-color: @theme-color4;
+    border-color: @theme-color2;
 }
 #about p{
-color: @theme-color4;
+color: @theme-color1;
 }
 .service-box {
     max-width: 400px;
@@ -263,7 +268,7 @@ color: @theme-color4;
         color: white;
         opacity: 0;
         display: block;
-        background: fade(@theme-color2, 90%);
+        background: fade(@theme-color2, 70%);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -285,9 +290,11 @@ color: @theme-color4;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
+				color:@theme-color4;
             }
             .project-name {
                 font-size: 18px;
+				color:@theme-color4;
             }
         }
     }
