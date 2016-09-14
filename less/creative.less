@@ -13,7 +13,7 @@ body {
 }
 
 hr {
-    border-color: @theme-primary;
+    border-color: @theme-color2;
     border-width: 3px;
     max-width: 50px;
 }
@@ -24,10 +24,10 @@ hr.light {
 
 a {
     .transition-all;
-    color: @theme-primary;
+    color: @theme-color2;
     &:hover,
     &:focus {
-        color: darken(@theme-primary, 10%);
+        color: darken(@theme-color2, 10%);
     }
 }
 
@@ -47,11 +47,11 @@ p {
 }
 
 .bg-primary {
-    background-color: @theme-primary;
+    background-color: @theme-color2;
 }
 
 .bg-dark {
-    background-color: @gray-darker;
+    background-color: @theme-color4;
     color: white;
 }
 
@@ -61,6 +61,7 @@ p {
 
 section {
     padding: 100px 0;
+	background: @theme-color1;
 }
 
 aside {
@@ -75,17 +76,17 @@ aside {
 
 .navbar-default {
     background-color: white;
-    border-color: fade(@gray-darker, 5%);
+    border-color: fade(@theme-color3, 5%);
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
-        color: @theme-primary;
+        color: @theme-color4;
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken(@theme-primary, 10%);
+            color: darken(@theme-color2, 10%);
         }
     }
     .navbar-header .navbar-toggle {
@@ -103,13 +104,13 @@ aside {
                 font-size: 13px;
                 color: @gray-darker;
                 &:hover {
-                    color: @theme-primary;
+                    color: @theme-color2;
                 }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: @theme-primary !important;
+                    color: @theme-color2 !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -137,20 +138,20 @@ aside {
         }
         &.affix {
             background-color: white;
-            border-color: fade(@gray-darker, 5%);
+            border-color: fade(@theme-color3, 5%);
             .navbar-header .navbar-brand {
-                color: @theme-primary;
+                color: @theme-color2;
                 font-size: 14px;
                 &:hover,
                 &:focus {
-                    color: darken(@theme-primary, 10%);
+                    color: darken(@theme-color2, 10%);
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
                 color: @gray-darker;
                 &:hover {
-                    color: @theme-primary;
+                    color: @theme-color2;
                 }
             }
         }
@@ -167,7 +168,7 @@ header {
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: center;
-    color: white;
+    color: @theme-color4;
     .header-content {
         position: relative;
         text-align: center;
@@ -180,19 +181,22 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
                 font-size: 30px;
-				background: rgba(126,214,190,0.6);
+				background: fade(@theme-color3,60%);
 				padding: 15px;
             }
             hr {
                 margin: 30px auto;
+				border-color:@theme-color2;
             }
             p {
                 font-weight: 300;
-                color: fade(white, 70%);
+				color:@theme-color4;
+                /*color: fade(white, 70%);*/
                 font-size: 16px;
                 margin-bottom: 50px;
 				padding: 15px;
-				background: rgba(126,214,190,0.6);
+				background:fade(@theme-color3, 60%);
+				/*background: rgba(126,214,190,0.6);*/
             }
         }
     }
@@ -227,16 +231,26 @@ header {
 
 .section-heading {
     margin-top: 0;
+	color: @theme-color4;
 }
-
+#services hr{
+    border-color: @theme-color4;
+}
+#about p{
+color: @theme-color4;
+}
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
     @media (min-width: 992px) {
         margin: 20px auto 0;
     }
+	i{
+		color:@theme-color2;
+	}
     p {
         margin-bottom: 0;
+		color: @theme-color4;
     }
 }
 
@@ -249,7 +263,7 @@ header {
         color: white;
         opacity: 0;
         display: block;
-        background: fade(@theme-primary, 90%);
+        background: fade(@theme-color2, 90%);
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -317,11 +331,11 @@ header {
 
 // Button Styles
 .btn-default {
-    .button-variant(@gray-darker;white;white);
+    .button-variant(@theme-color4;@theme-color1;white);
 }
 
 .btn-primary {
-    .button-variant(white;@theme-primary;@theme-primary);
+    .button-variant(white;@theme-color4;@theme-color2);
 }
 
 .btn {
