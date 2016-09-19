@@ -1,3 +1,11 @@
+.soon {
+  width: 422px;
+  height: 227px;
+  background: url('../img/crane.png');
+  background-position: 50% 20%;
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+}
 html,
 body {
   height: 100%;
@@ -143,15 +151,28 @@ aside {
   }
 }
 header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/banner.jpg');
+  background-image: url('../img/crane.png');
+  background-position: 95% 90%;
+  background-size: 320px auto;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  header {
+    background-position: 50% 90%;
+    background-size: 200px auto !important;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding-bottom: 120px;
+  }
+}
+header {
+  /*  position: relative;
+    width: 100%;
+    min-height: auto;
+    .background-cover;
+    background-position: center;
+   background-image: url('../img/banner.jpg');*/
   text-align: center;
   color: #1C140D;
 }
